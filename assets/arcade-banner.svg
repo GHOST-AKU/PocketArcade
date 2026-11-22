@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" role="img" aria-labelledby="title desc">
+  <title id="title">口袋街机像素游戏厅</title>
+  <desc id="desc">深蓝紫色背景上的像素游戏机，屏幕里有方块、宝石和小球。</desc>
+  <defs>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="2" fill="#a4b2ff" opacity=".12"/>
+    </pattern>
+    <pattern id="screen" width="16" height="16" patternUnits="userSpaceOnUse">
+      <path d="M0 0h8v8H0zM8 8h8v8H8z" fill="#fff" opacity=".035"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="430" rx="28" fill="#111329"/>
+  <rect width="1200" height="430" rx="28" fill="url(#dots)"/>
+  <path d="M0 350h1200v80H0z" fill="#171a37"/>
+  <path d="M46 47h12v12H46zm72 58h9v9h-9zm535-49h12v12h-12zm-51 299h8v8h-8z" fill="#d3fa78"/>
+  <path d="M630 84h10v10h-10zm-506 246h10v10h-10z" fill="#ff8eaa"/>
+  <path d="M611 134l8-16 8 16 16 8-16 8-8 16-8-16-16-8z" fill="#73e1d0"/>
+  <path d="M676 260l6-12 6 12 12 6-12 6-6 12-6-12-12-6z" fill="#9f8cff"/>
+  <rect x="66" y="67" width="420" height="30" rx="15" fill="#25284b"/>
+  <circle cx="84" cy="82" r="5" fill="#d3fa78"/>
+  <text x="99" y="87" fill="#c6c9e9" font-family="Arial,'Noto Sans CJK SC',sans-serif" font-size="13" font-weight="700" letter-spacing="2">POCKET ARCADE · PIXEL GAME ROOM</text>
+  <text x="62" y="188" fill="#fff4db" font-family="Arial,'Noto Sans CJK SC',sans-serif" font-size="78" font-weight="900" letter-spacing="5">口袋街机</text>
+  <text x="66" y="234" fill="#a9b2da" font-family="Arial,'Noto Sans CJK SC',sans-serif" font-size="23">六款熟悉小游戏，装进口袋里的像素游乐场</text>
+  <rect x="66" y="270" width="332" height="42" rx="21" fill="#d3fa78"/>
+  <text x="88" y="297" fill="#171a32" font-family="Arial,'Noto Sans CJK SC',sans-serif" font-size="16" font-weight="800">投一枚想象中的币，马上开玩！</text>
+  <text x="66" y="359" fill="#7f88b7" font-family="Arial,sans-serif" font-size="14" font-weight="700" letter-spacing="2">TAP   ·   PLAY   ·   REPEAT</text>
+  <g transform="translate(742 40)">
+    <rect x="73" y="18" width="300" height="355" rx="30" fill="#080a18"/>
+    <path d="M103 18h240a30 30 0 0 1 30 30v290H73V48a30 30 0 0 1 30-30z" fill="#5555a7"/>
+    <path d="M103 32h240a16 16 0 0 1 16 16v285H87V48a16 16 0 0 1 16-16z" fill="#7874db"/>
+    <rect x="111" y="58" width="190" height="177" rx="10" fill="#15182d"/>
+    <rect x="120" y="67" width="172" height="159" rx="4" fill="#202540"/>
+    <rect x="120" y="67" width="172" height="159" rx="4" fill="url(#screen)"/>
+    <path d="M143 88h22v22h-22zm22 0h22v22h-22zm44 22h22v22h-22zm22 0h22v22h-22zm-88 44h22v22h-22zm22 0h22v22h-22zm66 22h22v22h-22z" fill="#d3fa78"/>
+    <path d="M187 88h22v22h-22zm44 44h22v22h-22zm-44 44h22v22h-22z" fill="#ff8eaa"/>
+    <path d="M253 78h22v22h-22zm-88 44h22v22h-22z" fill="#73e1d0"/>
+    <circle cx="344" cy="87" r="8" fill="#d3fa78"/>
+    <circle cx="344" cy="115" r="8" fill="#ff8eaa"/>
+    <circle cx="344" cy="143" r="8" fill="#73e1d0"/>
+    <path d="M117 265h28v28h-28z" fill="#171a32"/>
+    <path d="M125 275h12v8h-12zm4-8h8v24h-8z" fill="#d4d6f4"/>
+    <circle cx="222" cy="279" r="15" fill="#ff8eaa"/>
+    <circle cx="267" cy="279" r="15" fill="#d3fa78"/>
+    <circle cx="222" cy="275" r="5" fill="#ffd9e2" opacity=".7"/>
+    <circle cx="267" cy="275" r="5" fill="#f0ffbc" opacity=".7"/>
+    <rect x="154" y="324" width="137" height="8" rx="4" fill="#a9a6f0" opacity=".8"/>
+    <text x="172" y="357" fill="#f1efff" font-family="Arial,sans-serif" font-size="12" font-weight="800" letter-spacing="3">INSERT FUN</text>
+  </g>
+</svg>

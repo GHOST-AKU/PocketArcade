@@ -1,37 +1,73 @@
-# 口袋街机 2 / Pocket Arcade
+<p align="center">
+  <img src="assets/arcade-banner.svg" alt="口袋街机：六款经典小游戏组成的像素游乐场" width="100%">
+</p>
 
-六款离线小游戏，原生 Android Canvas 绘制。大厅的像素标题、图标、点阵和每个游戏的配色均由程序绘制，不需要联网下载素材。支持 Android 6.0（API 23）及以上；应用包名为 `com.ghostaku.arcade.v2`，可与初版共存，两版纪录独立。
+<p align="center">
+  <a href="https://github.com/GHOST-AKU/PocketArcade/actions/workflows/android.yml">
+    <img src="https://img.shields.io/github/actions/workflow/status/GHOST-AKU/PocketArcade/android.yml?branch=main&style=for-the-badge&logo=githubactions&logoColor=white&label=BUILD" alt="GitHub Actions 构建状态">
+  </a>
+  <img src="https://img.shields.io/badge/ANDROID-6.0%2B-76D7C4?style=for-the-badge&logo=android&logoColor=182033" alt="Android 6.0 及以上">
+  <img src="https://img.shields.io/badge/MINI_GAMES-6-FF8EAA?style=for-the-badge&logo=gamepad&logoColor=182033" alt="六款小游戏">
+  <img src="https://img.shields.io/badge/PLAY-OFFLINE-D3FA78?style=for-the-badge&logo=wifi&logoColor=182033" alt="离线游玩">
+  <img src="https://img.shields.io/badge/CHIPTUNE-SFX%20CC0-9F8CFF?style=for-the-badge&logo=creativecommons&logoColor=white" alt="芯片音效 CC0">
+</p>
 
-推送代码后，GitHub Actions 会自动运行规则测试并构建 APK。打开仓库的 **Actions → Build Android APK → 最近一次运行**，在 Artifacts 下载 `PocketArcade-APK`，其中安装包名为 `app-debug.apk`。也可在 Android Studio 打开项目后自行构建。
+<p align="center">
+  <strong>一部手机，一座随时开门的小小街机厅。</strong><br>
+  方块、宝石、小球和像素音效都准备好了——挑一款，玩一会儿吧！🕹️
+</p>
 
-| 游戏 | 玩法 |
-| --- | --- |
-| 俄罗斯方块 | 经典模式自动下落，以七袋随机取块。解压模式任选七种形状、没有下落计时，按「落下」放置，支持撤销上一次放置或清空棋盘。 |
-| 宝石三消 | 限步 30 次、限时 90 秒、无限三种模式。可点选相邻宝石，也可滑动交换。无效交换不扣步数。 |
-| 乒乓对决 | 横拖球拍对战电脑，七分赢球。偏心击球或击球时移动球拍可产生侧旋；旋转随飞行衰减，轨迹会偏转，球上的点阵随旋转移动。 |
-| 扫雷 | 经典 9×9、10 雷；自定义宽高各 6–16 格，雷数从 1 到格数减 9。首点及周围一圈安全。可切换插旗或长按插旗；旗数与数字匹配时可点击已翻开的数字展开。 |
-| 贪吃蛇 | 滑动或方向键转向。吃到苹果会变长、加速，撞墙或撞到身体结束。 |
-| 打砖块 | 点发球，横拖挡板；三条命，清完 48 块砖即过关。 |
+<p align="center">
+  <a href="https://github.com/GHOST-AKU/PocketArcade/actions/workflows/android.yml"><strong>⬇️ 获取安卓安装包</strong></a>
+  &nbsp;·&nbsp;
+  <a href="#六款游戏想玩哪台就玩哪台">看看都有什么</a>
+  &nbsp;·&nbsp;
+  <a href="#想自己动手">自己构建</a>
+</p>
 
-三消开局可以选择是否启用道具。开启后，每局有提示 ×3（标出合法交换）、炸弹 ×2（清除所选格周围 3×3）、洗牌 ×2（重排成有合法交换的棋盘）。道具不扣步数，也不会暂停限时模式。不同模式和道具开关的三消最高分分别记录。扫雷按棋盘配置记录最快通关；解压方块不进入经典纪录。
+---
 
-大厅可以独立开启或关闭音效和触感。触感尊重系统触感开关；Android 10 及以上使用预定义短振效果，较老设备调用系统触感反馈。线性马达可呈现更细的反馈，实际触感由设备与系统决定。
+## 🎮 六款游戏，想玩哪台就玩哪台
 
-## 音效素材授权
+| 街机角落 | 开始怎么玩 | 多一点点乐趣 |
+| --- | --- | --- |
+| 🧱 **俄罗斯方块** | 看准空位，把方块一层层叠起来。 | 想轻松摆一摆？切到解压模式，自选方块、手动落下，还能撤销或清空棋盘。 |
+| 💎 **宝石三消** | 交换相邻宝石，让三个或更多同色宝石连在一起。 | 限步、限时、无限三种模式；提示、炸弹、洗牌道具可选。 |
+| 🏓 **旋球乒乓** | 拖动球拍，和电脑来一场七分制对决。 | 击球位置和拍子移动会带出旋转，球路也会跟着拐弯。 |
+| 💣 **扫雷** | 点开格子，看看数字提示，找出藏起来的雷。 | 想换个难度？棋盘宽高和雷数都能自定义；第一下及周围一圈是安全区。 |
+| 🐍 **贪吃蛇** | 滑动转向，吃下苹果，让小蛇慢慢变长。 | 越吃越快，别让它撞上墙或自己的尾巴！ |
+| 🧩 **打砖块** | 发球、移动挡板，把弹球送回去。 | 三条命，清掉全部 48 块砖就能通关。 |
 
-`tools/make_sfx.py` 是原创合成脚本，`app/src/main/res/raw/sfx_*.wav` 为脚本生成的九个芯片音效。**仅这些音效与该脚本**以 [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/) 提供，可以复用、修改和分发。完整文本见 `tools/CC0-1.0.txt`。
+## ✨ 这间小街机厅的可爱之处
 
-生成音效：`python3 tools/make_sfx.py`。不使用外部采样。应用其他源码未附加开源许可证。
+- **打开就能玩**：六款小游戏都在手机本地运行，不需要账号，也不需要联网。
+- **像素味是画出来的**：大厅、图标、点阵和游戏配色由程序绘制，不靠在线素材。
+- **声音和触感都能关**：大厅里可以分别开关音效与触感；触感效果会随设备而不同。
+- **纪录留在本机**：三消分数、扫雷成绩等保存在本地，切换游戏不会串台。
 
-## 构建和验证
+## ⬇️ 想现在就开玩？
 
-安装 JDK 17、Gradle 8.9、Android SDK Platform 35 与 Build Tools 35.0.0。在 Android Studio 打开目录，或在本目录运行：
+点上面的 **「获取安卓安装包」**，进入 GitHub Actions，打开最新一次成功的 **Build Android APK** 运行，在页面底部的 **Artifacts** 下载 <code>PocketArcade-APK</code>。下载后解压，并在安卓手机上安装其中的 <code>app-debug.apk</code>。
 
-```sh
+支持 **Android 6.0 及以上**。如果手机提示不允许安装此来源的应用，请在系统设置中允许当前浏览器或文件管理器安装应用。
+
+## 🎵 像素音效从哪里来？
+
+九种芯片音效由仓库里的小脚本合成，没有使用外部采样。音效文件和生成脚本采用 **CC0 1.0**，可以自由复用；游戏其他代码目前没有附加开源许可证。
+
+## 🛠️ 想自己动手？
+
+用 Android Studio 打开项目，或准备 JDK 17、Gradle 8.9 和 Android SDK 35 后运行：
+
+~~~~sh
 bash test.sh
 gradle assembleDebug
-```
+~~~~
 
-规则测试不依赖 Android SDK。构建输出：`app/build/outputs/apk/debug/app-debug.apk`。另附手动运行的 GitHub Actions 工作流。使用同一个签名可覆盖自身构建的版本；不同签名不能相互覆盖。
+规则测试通过后，APK 会生成在 <code>app/build/outputs/apk/debug/app-debug.apk</code>。
 
-游戏全部离线运行，没有联网权限。对局保留在内存里，切换到后台会自动暂停，进程被系统结束后需重开。
+---
+
+<p align="center">
+  <sub>不用排队，也没有代币机。祝你今天玩得开心！ 💖</sub>
+</p>
